@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . C:\Users\mrodriguez\AppData\Roaming\npm-cache\3a52ce78-.lock
+10 verbose tar pack [ 'C:\\Users\\mrodriguez\\AppData\\Roaming\\npm-cache\\angular-flexslider\\1.3.2\\package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package.tgz
+12 verbose folder .
+13 info prepublish angular-flexslider@1.3.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. C:\Users\mrodriguez\AppData\Roaming\npm-cache\1f1177db-tar.lock
+16 silly lockFile 73da46d4-lar-flexslider-1-3-2-package-tgz tar://C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package.tgz
+17 verbose lock tar://C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package.tgz C:\Users\mrodriguez\AppData\Roaming\npm-cache\73da46d4-lar-flexslider-1-3-2-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 73da46d4-lar-flexslider-1-3-2-package-tgz tar://C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package.tgz
+21 silly lockFile 73da46d4-lar-flexslider-1-3-2-package-tgz tar://C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package.tgz
+22 silly lockFile b131df7b-angular-flexslider-1-3-2-package C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package
+23 verbose lock C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package C:\Users\mrodriguez\AppData\Roaming\npm-cache\b131df7b-angular-flexslider-1-3-2-package.lock
+24 silly lockFile b131df7b-angular-flexslider-1-3-2-package C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package
+25 silly lockFile b131df7b-angular-flexslider-1-3-2-package C:\Users\mrodriguez\AppData\Roaming\npm-cache\angular-flexslider\1.3.2\package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'angular-flexslider',
+28 silly publish   version: '1.3.2',
+28 silly publish   description: 'AngularJS wrapper for Flexslider',
+28 silly publish   main: 'angular-flexslider.js',
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'git://github.com/rodriguezmilton/angular-flexslider.git' },
+28 silly publish   keywords: [ 'angularjs', 'flexslider' ],
+28 silly publish   dependencies: { angular: '^1.3', jquery: '^2', flexslider: '^2.6.0' },
+28 silly publish   author: { name: 'Nicola Peduzzi' },
+28 silly publish   bugs: { url: 'https://github.com/rodriguezmilton/angular-flexslider/issues' },
+28 silly publish   homepage: 'https://github.com/rodriguezmilton/angular-flexslider',
+28 silly publish   readme: '# FlexSlider Directive for AngularJS\r\n\r\nProvides a `flex-slider` directive to include and initialize a [FlexSlider](http://flexslider.woothemes.com/) slideshow in an [AngularJS](http://angularjs.org/) application.\r\n\r\n## Intallation\r\n\r\nTo install using [Bower](http://bower.io):\r\n\r\n```\r\nbower install angular-flexslider\r\n```\r\n\r\n## Setup\r\n\r\nIn your document header include FlexSlider\'s CSS:\r\n\r\n```\r\n<link rel="stylesheet" type="text/css" href="/components/flexslider/flexslider.css">\r\n```\r\n\r\nThen include the scripts (order is relevant):\r\n\r\n```\r\n<script src="/components/jquery/jquery.js"></script>\r\n<script src="/components/flexslider/jquery.flexslider.js"></script>\r\n<script src="/components/angular/angular.js"></script>\r\n<script src="/components/angular-flexslider/angular-flexslider.js"></script>\r\n```\r\n\r\nIn your AngularJS app, you\'ll need to import the `angular-flexslider` module:\r\n\r\n```\r\nangular.module(\'myModule\', [\'angular-flexslider\']);\r\n```\r\n\r\n## Usage\r\n\r\nThis module will define a single directive `flex-slider` that can be used either as\r\nan element or attribute.\r\n\r\nAssuming a `mySlides` variable is present in the current scope, a FlexSlider instance\r\ncan be declared like so:\r\n\r\n```\r\n<flex-slider slide="s in mySlides">\r\n\t<li>\r\n\t\t<img ng-src="{{s}}">\r\n\t</li>\r\n</flex-slider>\r\n```\r\n\r\nThe `slide` argument works similarly to [ngRepeat](http://docs.angularjs.org/api/ng.directive:ngRepeat)\r\nin which you can specify a tracking expression.\r\n\r\nThe `<li>` element should be defined and it can be used to specify `data-thumbs`\r\nattribute for FlexSlider thumbs or, for example, `ng-switch` to select the content\r\nmarkup.\r\n\r\n<b>Warning to UI Bootstrap users:</b> You must use the `flex-slide` argument instead of `slide` to avoid name conflict with the carousel. This is:\r\n\r\n```\r\n<flex-slider flex-slide="s in mySlides">\r\n\t<li>\r\n\t\t<img ng-src="{{s}}">\r\n\t</li>\r\n</flex-slider>\r\n```\r\n\r\n### Properties\r\n\r\nFlexSlider initialization properties can be specified as attributes of `flex-slider`\r\ndirective using dash separated attributes instead of cammel case.\r\n\r\n**For example, the property `controlNav` can be specified via the attribute `control-nav`.**\r\n\r\nThe FlexSlider callback API can also be used by specifying attributes with the\r\nappropriate API name containing [AngularJS expressions](http://docs.angularjs.org/guide/expression).\r\n\r\nBesides FlexSlider properties, one can specify a `slider-id` attribute to set an\r\nid to the actual slider. If not specified and an id attribute is specified to\r\nthe `flex-slider` element, the actual slider will have an id of `<id>-slider`.\r\n\r\nThe list of available properties (from [this page](http://www.woothemes.com/flexslider/#tabs-flexslider-info-tabber-tab-2)):\r\n\r\n```javascript\r\nnamespace: "flex-",             //{NEW} String: Prefix string attached to the class of every element generated by the plugin\r\nselector: ".slides > li",       //{NEW} Selector: Must match a simple pattern. \'{container} > {slide}\' -- Ignore pattern at your own peril\r\nanimation: "fade",              //String: Select your animation type, "fade" or "slide"\r\neasing: "swing",               //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!\r\ndirection: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"\r\nreverse: false,                 //{NEW} Boolean: Reverse the animation direction\r\nanimationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end\r\nsmoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode\r\nstartAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)\r\nslideshow: true,                //Boolean: Animate slider automatically\r\nslideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds\r\nanimationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds\r\ninitDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds\r\nrandomize: false,               //Boolean: Randomize slide order\r\n\r\n// Usability features\r\npauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.\r\npauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering\r\nuseCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available\r\ntouch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices\r\nvideo: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches\r\n\r\n// Primary Controls\r\ncontrolNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage\r\ndirectionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)\r\nprevText: "Previous",           //String: Set the text for the "previous" directionNav item\r\nnextText: "Next",               //String: Set the text for the "next" directionNav item\r\n\r\n// Secondary Navigation\r\nkeyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys\r\nmultipleKeyboard: false,        //{NEW} Boolean: Allow keyboard navigation to affect multiple sliders. Default behavior cuts out keyboard navigation with more than one slider present.\r\nmousewheel: false,              //{UPDATED} Boolean: Requires jquery.mousewheel.js (https://github.com/brandonaaron/jquery-mousewheel) - Allows slider navigating via mousewheel\r\npausePlay: false,               //Boolean: Create pause/play dynamic element\r\npauseText: \'Pause\',             //String: Set the text for the "pause" pausePlay item\r\nplayText: \'Play\',               //String: Set the text for the "play" pausePlay item\r\n\r\n// Special properties\r\ncontrolsContainer: "",          //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.\r\nmanualControls: "",             //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.\r\nsync: "",                       //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.\r\nasNavFor: "",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider\r\n\r\n// Carousel Options\r\nitemWidth: 0,                   //{NEW} Integer: Box-model width of individual carousel items, including horizontal borders and padding.\r\nitemMargin: 0,                  //{NEW} Integer: Margin between carousel items.\r\nminItems: 0,                    //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.\r\nmaxItems: 0,                    //{NEW} Integer: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.\r\nmove: 0,                        //{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.\r\n\r\n// Callback API\r\nstart: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide\r\nbefore: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation\r\nafter: function(){},            //Callback: function(slider) - Fires after each slider animation completes\r\nend: function(){},              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)\r\nadded: function(){},            //{NEW} Callback: function(slider) - Fires after a slide is added\r\nremoved: function(){}           //{NEW} Callback: function(slider) - Fires after a slide is removed\r\n```\r\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '2fd4be2d07b7430c092502be5b8e4a98d533f2de',
+28 silly publish   _id: 'angular-flexslider@1.3.2',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: 'fbf5fe3b238137a4c5879e5edbcf5e6ca36ed170',
+28 silly publish   _from: '.' }
+29 verbose request where is /angular-flexslider
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 8c6c03af8ec32c83
+32 verbose url raw /angular-flexslider
+33 verbose url resolving [ 'https://registry.npmjs.org/', './angular-flexslider' ]
+34 verbose url resolved https://registry.npmjs.org/angular-flexslider
+35 verbose request where is https://registry.npmjs.org/angular-flexslider
+36 info trying registry request attempt 1 at 17:04:22
+37 http PUT https://registry.npmjs.org/angular-flexslider
+38 http 403 https://registry.npmjs.org/angular-flexslider
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 16 Feb 2016 20:04:24 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-dfw1828-DFW',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1455653063.303756,VS0,VE1405' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 1.3.2." : angular-flexslider
+41 error     at RegClient.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+41 error     at Request._callback (c:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+41 error     at Request.self.callback (c:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Windows_NT 6.2.9200
+44 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error cwd e:\Solutions\FlexSlider\angular-flexslider
+46 error node -v v0.10.32
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
