@@ -1,0 +1,19 @@
+{
+  "name": "angular-flexslider",
+  "version": "1.3.2",
+  "description": "AngularJS wrapper for Flexslider",
+  "main": "angular-flexslider.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rodriguezmilton/angular-flexslider.git"
+  },
+  "keywords": [
+    "angularjs",
+    "flexslider"
+  ],
+  "author": "Nicola Peduzzi",
+  "bugs": {
+    "url": "https://github.com/rodriguezmilton/angular-flexslider/issues"
+  },
+  "homepage": "https://github.com/rodriguezmilton/angular-flexslider"
+}
