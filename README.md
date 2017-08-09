@@ -24,7 +24,7 @@ Then include the scripts (order is relevant):
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/flexslider/jquery.flexslider-min.js"></script>
 <script src="/node_modules/angular/angular.min.js"></script>
-<script src="/node_modules/angular-flexslider/angular-flexslider.js"></script>
+<script src="/node_modules/angular-flexslider-nsp/angular-flexslider.js"></script>
 ```
 
 In your AngularJS app, you'll need to import the `angular-flexslider` module:
