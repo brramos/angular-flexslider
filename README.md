@@ -4,10 +4,10 @@ Provides a `flex-slider` directive to include and initialize a [FlexSlider](http
 
 ## Intallation
 
-To install using [Bower](http://bower.io):
+To install using [npm](https://www.npmjs.com/get-npm):
 
 ```
-bower install angular-flexslider
+npm install angular-flexslider
 ```
 
 ## Setup
@@ -21,10 +21,10 @@ In your document header include FlexSlider's CSS:
 Then include the scripts (order is relevant):
 
 ```
-<script src="/components/jquery/jquery.js"></script>
-<script src="/components/flexslider/jquery.flexslider.js"></script>
-<script src="/components/angular/angular.js"></script>
-<script src="/components/angular-flexslider/angular-flexslider.js"></script>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/flexslider/jquery.flexslider-min.js"></script>
+<script src="/node_modules/angular/angular.min.js"></script>
+<script src="/node_modules/angular-flexslider/angular-flexslider.js"></script>
 ```
 
 In your AngularJS app, you'll need to import the `angular-flexslider` module:
