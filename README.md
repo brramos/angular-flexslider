@@ -7,7 +7,7 @@ Provides a `flex-slider` directive to include and initialize a [FlexSlider](http
 To install using [npm](https://www.npmjs.com/get-npm):
 
 ```
-npm install angular-flexslider
+npm install angular-flexslider-nsp
 ```
 
 ## Setup
@@ -15,7 +15,7 @@ npm install angular-flexslider
 In your document header include FlexSlider's CSS:
 
 ```
-<link rel="stylesheet" type="text/css" href="/components/flexslider/flexslider.css">
+<link rel="stylesheet" type="text/css" href="/node_modules/flexslider/flexslider.css">
 ```
 
 Then include the scripts (order is relevant):
