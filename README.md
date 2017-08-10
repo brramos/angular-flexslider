@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brramos/angular-flexslider.svg?branch=master)](https://travis-ci.org/brramos/angular-flexslider)
+
 # FlexSlider Directive for AngularJS
 
 Provides a `flex-slider` directive to include and initialize a [FlexSlider](http://flexslider.woothemes.com/) slideshow in an [AngularJS](http://angularjs.org/) application.
