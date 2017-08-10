@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/brramos/angular-flexslider.svg?branch=master)](https://travis-ci.org/brramos/angular-flexslider)
+[![Coverage Status](https://coveralls.io/repos/github/brramos/angular-flexslider/badge.svg?branch=master)](https://coveralls.io/github/brramos/angular-flexslider?branch=master)
 
 # FlexSlider Directive for AngularJS
 
