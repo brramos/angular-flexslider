@@ -20,5 +20,15 @@
     "bugs": {
         "url": "https://github.com/brramos/angular-flexslider/issues"
     },
-    "homepage": "https://github.com/brramos/angular-flexslider"
+    "homepage": "https://github.com/brramos/angular-flexslider",
+    "devDependencies": {
+        "chai": "^4.1.1",
+        "coveralls": "^2.13.1",
+        "istanbul": "^0.4.5",
+        "mocha": "^3.5.0"
+    },
+    "scripts": {
+        "test": "node_modules/.bin/mocha --reporter spec",
+        "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+    }
 }
